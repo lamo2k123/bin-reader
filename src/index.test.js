@@ -109,8 +109,8 @@ describe('Buffer', () => {
             expect(reader.isEnd()).toEqual(false);
             expect(reader2.isEnd()).toEqual(false);
 
-            reader.skip(19);
-            reader2.skip(19);
+            reader.skip(src.length);
+            reader2.skip(src.length);
 
             expect(reader.isEnd()).toEqual(true);
             expect(reader2.isEnd()).toEqual(true);

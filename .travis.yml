@@ -18,11 +18,11 @@ script:
   - yarn tsc
 
 deploy:
-  node_js: 9
   skip_cleanup: true
   provider: npm
   email: lamo2k123@gmail.com
   api_key: $NPM_API_KEY
   on:
+    node: 9
     tags: true
     repo: lamo2k123/bin-reader

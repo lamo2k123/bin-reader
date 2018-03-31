@@ -1,0 +1,32 @@
+{
+    "name": "bin-reader",
+    "version": "1.0.0",
+    "author": {
+        "name": "Aleksey Novikov",
+        "email": "lamo2k123@gmail.com",
+        "url": "https://github.com/lamo2k123"
+    },
+    "bugs": {
+        "url": "https://github.com/lamo2k123/bin-reader/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lamo2k123/bin-reader.git"
+    },
+    "dependencies": {
+        "lodash.uniqueid": "4.x.x"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/lodash.uniqueid": "4.x.x",
+        "@types/node": "9.x.x",
+        "jest": "22.x.x",
+        "ts-jest": "22.x.x",
+        "typescript": "2.x.x"
+    },
+    "scripts": {
+        "tsc": "tsc",
+        "tsc:watch": "tsc --watch",
+        "test": "jest --config jest.config.json"
+    }
+}

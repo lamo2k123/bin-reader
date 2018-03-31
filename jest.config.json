@@ -1,0 +1,10 @@
+{
+    "collectCoverage": true,
+    "transform": {
+        ".ts": "ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.js$",
+    "moduleFileExtensions": [
+        "js"
+    ]
+}

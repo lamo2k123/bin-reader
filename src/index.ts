@@ -79,7 +79,7 @@ class BinReader {
         return false;
     }
 
-    read(key: string): Read {
+    read(key?: string): Read {
         if(!key) {
             key = uniqueId('read-');
         }

@@ -6,6 +6,22 @@ export enum Types {
     readUIntLE = 'readUIntLE'
 }
 
+export const Read = {
+    key        : String,
+    int8       : Function,
+    int4       : Function,
+    int2       : Function,
+    int1       : Function,
+    uInt8      : Function,
+    uInt4      : Function,
+    uInt2      : Function,
+    uInt1      : Function,
+    isEnd      : Function,
+    skip       : Function,
+    setPosition: Function,
+    getPosition: Function
+};
+
 class BinReader {
 
     private _buffer: Buffer | null = null;
@@ -84,7 +100,7 @@ class BinReader {
             skip       : this.skip.bind(this, key),
             setPosition: this.setPosition.bind(this, key),
             getPosition: this.getPosition.bind(this, key),
-        }
+        };
     }
 
     int(key: string, type: Types = Types.readIntLE, BYTE: number): number | null {

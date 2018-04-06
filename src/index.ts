@@ -6,7 +6,7 @@ export enum Types {
     readUIntLE = 'readUIntLE'
 }
 
-export const Read = {
+export type Read = {
     key        : String,
     int8       : Function,
     int4       : Function,
@@ -79,7 +79,7 @@ class BinReader {
         return false;
     }
 
-    read(key: string): { [key: string]: Function | String } {
+    read(key: string): Read {
         if(!key) {
             key = uniqueId('read-');
         }
